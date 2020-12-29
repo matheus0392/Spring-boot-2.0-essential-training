@@ -1,9 +1,27 @@
 package dev.msnascimento.training;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ROOM")
 public class Room {
+	@Id
+	@Column(name = "ROOM_ID")
+
+	@GeneratedValue
 	private long id;
+
+	@Column(name = "NAME")
 	private String name;
+
+	@Column(name = "ROOM_NUMBER")
 	private String number;
+
+	@Column(name = "BED_INFO")
 	private String info;
 
 	public Room() {
@@ -47,6 +65,21 @@ public class Room {
 
 	public void setInfo(String info) {
 		this.info = info;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Room [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", number=");
+		builder.append(number);
+		builder.append(", info=");
+		builder.append(info);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }

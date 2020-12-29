@@ -9,6 +9,11 @@ spring:
     #key-store-type: JKS
     #keu-alias: linkedin
     #key-password: password
+
+#spring.datasource.initialization-mode=embedded
+  jpa:
+    hibernate:
+      ddl-auto: none
 ---
 spring:
   profiles: dev
@@ -17,5 +22,6 @@ server:
 ---
 spring:
   profiles: test
+
 server:
   port: 9000
