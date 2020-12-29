@@ -1,14 +1,14 @@
 spring:
-management:
-  security:
-    enable:false
-server:
-  ssl:
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-store-type: JKS
-    keu-alias: linkedin
-    key-password: password
+#management:
+#  security:
+#    enable:false
+#server:
+  #ssl:
+    #key-store: classpath:keystore.jks
+    #key-store-password: password
+    #key-store-type: JKS
+    #keu-alias: linkedin
+    #key-password: password
 ---
 spring:
   profiles: dev
