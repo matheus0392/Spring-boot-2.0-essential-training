@@ -14,6 +14,12 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+
+amqp:
+  queue:
+    name: room-cleaner
+  exchange:
+    name: landom-rooms-exchange
 ---
 spring:
   profiles: dev
