@@ -20,6 +20,10 @@ amqp:
     name: room-cleaner
   exchange:
     name: landom-rooms-exchange
+
+landon:
+  logging:
+    logger-name: LinkedinLearning-Landon
 ---
 spring:
   profiles: dev

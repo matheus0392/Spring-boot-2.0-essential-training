@@ -58,7 +58,7 @@ public class RoomCleaningPrimer implements CommandLineRunner {
 				LOGGER.info("parsing exception", e);
 			}
 		});
-		System.exit(SpringApplication.exit(context));
+		//System.exit(SpringApplication.exit(context));
 	}
 
 }

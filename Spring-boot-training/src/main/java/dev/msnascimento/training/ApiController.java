@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.frankmoley.landon.aop.Timed;
+
 @RestController
 @RequestMapping("/api")
 public class ApiController {
@@ -20,6 +22,7 @@ public class ApiController {
 	}
 	
 	@GetMapping("/rooms")
+	@Timed
 	public List<Room> getAllRooms(Model model) {
 		return this.roomServices.getAllRooms();
 	}
